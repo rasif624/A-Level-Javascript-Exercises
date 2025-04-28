@@ -10,8 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function generateRandomArray() {
         const array = [];
         const size = Math.floor(Math.random() * 5) + 5;
-        for (let i = 0; i < size; i++) {
-            array.push(Math.floor(Math.random() * 100) + 1);
+        let currentIndex = 0
+        let value = 0;
+        while (currentIndex < size) {
+            value = (Math.floor(Math.random() * 10)) + 10 + value;
+            array.push(value);
+            currentIndex++;
         }
         return array;
     }
