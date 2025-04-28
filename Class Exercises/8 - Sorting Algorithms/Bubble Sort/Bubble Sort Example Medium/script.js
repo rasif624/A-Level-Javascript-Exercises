@@ -29,25 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function bubbleSort(array) {
-        let n = array.length;
+        let n = _______;
         let swapped;
     
         do {
-            swapped = _______;
-            for (let i = 0; i < n - 1; i++) {
-                if (array[i] > array[i + 1]) {
+            swapped = false;
+            for (let i = 0; i < _______; i++) {
+                if (___________) {
+                    // Swap
                     let temp = array[i];
-                    array[i] = array[i + ___];
+                    array[i] = __________;
                     array[i + 1] = temp;
-                    swapped = _______;
+                    swapped = true;
                 }
             }
-            n--;
+            _______;
         } while (swapped);
     
         return array;
     }
-    
 
     // Generate a new random array when the button is clicked
     generateButton.addEventListener("click", function() {
