@@ -21,23 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function studentSearch(array, target) {
-        let _____ = 0;
-        let _____ = array.length - 1;
-    
-        while (______________________) {
-            let mid = _______________________;
-            if (__________________________) {
-                return _____;
-            } else if (__________________________) {
-                _____ = _____ + 1;
-            } else {
-                _____ = _____ - 1;
-            }
+        let left = 0;
+        let right = array.length - 1;
+        while(left <= right){
+            let mid = Math.floor((left + right) / 2)
+        }if(array[mid] === target) {
+            return [mid];
+        }else if(array[mid] < target){
+            
         }
-    
-        return _____;
-    }
-    
+        }
     
 
     generateButton.addEventListener("click", function () {

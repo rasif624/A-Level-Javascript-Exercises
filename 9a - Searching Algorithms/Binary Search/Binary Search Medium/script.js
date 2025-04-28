@@ -22,16 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function studentSearch(array, target) {
         let left = 0;
-        let right = ___________;
+        let right = array.length - 1;
     
-        while (___________) {
-            let mid = ____________________;
-            if (____________________) {
+        while (left <= right) {
+            let mid = Math.floor ((left + right) / 2);
+            if (array[mid] === target) {
                 return mid;
-            } else if (____________________) {
+            } else if (array[mid] < target) {
                 left = mid + 1;
             } else {
-                right = _______________;
+                right = mid - 1;
             }
         }
     
